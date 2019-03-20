@@ -33,3 +33,63 @@
 # On servers with CF_CPANEL enabled a cPanel user can be configured to use the
 # special "any" case (see above)
 #
+
+# CloudFlare client credientials for any domain triggered:
+#DOMAIN:any:USER:myuser:CFACCOUNT:sales@hostsdomain.com:CFAPIKEY:12345abcdef6789
+
+# CloudFlare client credientials for domain.com involved in trigger:
+#DOMAIN:domain.com:USER:myuser:CFACCOUNT:sales@domain.com:CFAPIKEY:12345abcdef6789
+
+# CloudFlare client credientials for domain2.com involved in trigger:
+#DOMAIN:domain2.com:USER:myuser:CFACCOUNT:myuser@hotmail.com:CFAPIKEY:12345abcdef6789
+
+# Disable CloudFlare cPanel user mycpanel from this feature:
+#DISABLE:mycpanel
+
+# Enable a cPanel user mycpanel to use the "any" feature:
+#ANY:mycpanel
+
+tcp|in|d=80|s=173.245.48.0/20
+tcp|in|d=80|s=103.21.244.0/22
+tcp|in|d=80|s=103.22.200.0/22
+tcp|in|d=80|s=103.31.4.0/22
+tcp|in|d=80|s=141.101.64.0/18
+tcp|in|d=80|s=108.162.192.0/18
+tcp|in|d=80|s=190.93.240.0/20
+tcp|in|d=80|s=188.114.96.0/20
+tcp|in|d=80|s=197.234.240.0/22
+tcp|in|d=80|s=198.41.128.0/17
+tcp|in|d=80|s=162.158.0.0/15
+tcp|in|d=80|s=104.16.0.0/12
+tcp|in|d=80|s=172.64.0.0/13
+tcp|in|d=80|s=131.0.72.0/22
+tcp|in|d=443|s=173.245.48.0/20
+tcp|in|d=443|s=103.21.244.0/22
+tcp|in|d=443|s=103.22.200.0/22
+tcp|in|d=443|s=103.31.4.0/22
+tcp|in|d=443|s=141.101.64.0/18
+tcp|in|d=443|s=108.162.192.0/18
+tcp|in|d=443|s=190.93.240.0/20
+tcp|in|d=443|s=188.114.96.0/20
+tcp|in|d=443|s=197.234.240.0/22
+tcp|in|d=443|s=198.41.128.0/17
+tcp|in|d=443|s=162.158.0.0/15
+tcp|in|d=443|s=104.16.0.0/12
+tcp|in|d=443|s=172.64.0.0/13
+tcp|in|d=443|s=131.0.72.0/22
+
+# Cloudflare ipv6
+tcp|in|d=80|s=2400:cb00::/32
+tcp|in|d=80|s=2606:4700::/32
+tcp|in|d=80|s=2803:f800::/32
+tcp|in|d=80|s=2405:b500::/32
+tcp|in|d=80|s=2405:8100::/32
+tcp|in|d=80|s=2a06:98c0::/29
+tcp|in|d=80|s=2c0f:f248::/32
+tcp|in|d=443|s=2400:cb00::/32
+tcp|in|d=443|s=2606:4700::/32
+tcp|in|d=443|s=2803:f800::/32
+tcp|in|d=443|s=2405:b500::/32
+tcp|in|d=443|s=2405:8100::/32
+tcp|in|d=443|s=2a06:98c0::/29
+tcp|in|d=443|s=2c0f:f248::/32
