@@ -1,4 +1,4 @@
-# namedCsfPost
+# csfCustom
 	ConfigServer Security & Firewall custom files
 # Install
 	cd /etc/csf
